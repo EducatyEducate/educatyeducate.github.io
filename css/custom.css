@@ -1,0 +1,18 @@
+body{
+    padding-top:40px;
+}
+.col-md-6{
+    border: 1px solid rgba(211, 211, 211, 0.2);
+    box-shadow: 0 16px 48px rgba(211,211,211,0.5);
+    height: 400px;
+}
+.editor{
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border: none !important;
+    padding: 10px;
+}
+.spacing{
+    margin-bottom: 30px;
+}

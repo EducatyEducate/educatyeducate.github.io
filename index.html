@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Code Editor || Made with ♥ by Educational Websites on GitHub</title>
+      <link rel="stylesheet" type="text/css" href="css/custom.css">
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+   </head>
+   <body>
+    <div class="container">
+        <h1>Code Editor</h1>
+        <p>A trusted Code Editor by Educaty&reg;.</p>
+        <hr>
+        <button class="btn btn-primary" onclick="switch_html();">Switch to HTML</button>
+        <button class="btn btn-primary" onclick="switch_css();">Switch to CSS</button>
+        <button class="btn btn-primary" onclick="switch_js();">Switch to JS</button>
+        <div class="spacing"></div>
+        <div class="row">
+        <div class="col-md-6">
+            <textarea id="htmlCode" placeholder="HTML Code" class="editor form-control"></textarea>
+            <textarea id="cssCode" placeholder="CSS Code" class="editor form-control" style="display: none;"></textarea>
+            <textarea id="jsCode" placeholder="JS Code" class="editor form-control" style="display: none;"></textarea>
+            <!-- <textarea id="cssCode" placeholder="CSS Code"></textarea>
+            <textarea id="jsCode" placeholder="JavaScript Code"></textarea> -->
+        </div>
+        <div class="col-md-6">
+            <iframe id="preview-window"></iframe>
+        </div>
+    </div>
+</div>
+
+    <script type="text/javascript" src="js/editor.js"defer></script>
+   </body>
+</html>
