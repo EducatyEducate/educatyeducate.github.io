@@ -4,29 +4,44 @@
       <title>Educaty's official trusted Online Live Code Editor</title>
       <link rel="stylesheet" type="text/css" href="css/custom.css">
       <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="manifest" href="/manifest.json">
+      <link rel="icon" href="images/educaty.png"/>
+      <link rel="apple-touch-icon" href="images/educaty.png">
+      <meta name="theme-color" content="black"/>
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black">
+      <meta name="apple-mobile-web-app-title" content="Educaty Code Editor">
+      <meta name="msapplication-TileImage" content="images/educaty.png">
+      <meta name="msapplication-TileColor" content="black">
    </head>
    <body>
     <div class="container">
         <h1>Code Editor</h1>
-        <p>A trusted Code Editor by Educaty&reg;.</p>
+        <p>
+            A trusted Code Editor by Educaty&reg;.
+            <br>
+            Most of code written by <a href="//github.com/e-coders" class="link">@e-coders</a> on github
+        </p>
         <hr>
         <button class="btn btn-primary" onclick="switch_html();">Switch to HTML</button>
         <button class="btn btn-primary" onclick="switch_css();">Switch to CSS</button>
         <button class="btn btn-primary" onclick="switch_js();">Switch to JS</button>
         <div class="spacing"></div>
         <div class="row">
-        <div class="col-md-6">
-            <textarea id="htmlCode" placeholder="HTML Code" class="editor form-control"></textarea>
-            <textarea id="cssCode" placeholder="CSS Code" class="editor form-control" style="display: none;"></textarea>
-            <textarea id="jsCode" placeholder="JS Code" class="editor form-control" style="display: none;"></textarea>
-        </div>
-        <div class="col-md-6">
-            <iframe id="preview-window"></iframe>
+            <div class="col-md-6">
+                <textarea id="htmlCode" placeholder="HTML Code" class="editor form-control"></textarea>
+                <textarea id="cssCode" placeholder="CSS Code" class="editor form-control" style="display: none;"></textarea>
+                <textarea id="jsCode" placeholder="JS Code" class="editor form-control" style="display: none;"></textarea>
+            </div>
+            <div class="col-md-6">
+                <iframe id="preview-window"></iframe>
+            </div>
         </div>
     </div>
-</div>
 
     <script type="text/javascript" src="js/editor.js"defer></script>
     <script type="text/javascript" src="js/query.js"defer></script>
+    <script src="js/main.js"></script>
    </body>
 </html>

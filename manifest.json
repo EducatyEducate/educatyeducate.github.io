@@ -1,0 +1,14 @@
+{
+  "name": "Educaty Code Editor",
+  "short_name": "Code Editor",
+  "icons": [{
+    "src": "images/educaty.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }],
+  "lang": "en-US",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "black"
+}
