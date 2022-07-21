@@ -1,19 +1,19 @@
 let deferredPrompt;
+const btn = document.querySelector("#install");
 
 window.addEventListener('beforeinstallprompt', (e) => {
     deferredPrompt = e;
 });
 
-function install(){
+btn.addEventListener("click",async() => {
   if (deferredPrompt !== null) {
     deferredPrompt.prompt();
     const { outcome } = await deferredPrompt.userChoice;
     if (outcome === 'accepted') {
         deferredPrompt = null;
     }
-}
-}
-
+    }
+});
 var cacheName = 'educaty-code-editor';
 var filesToCache = [
   '/',
